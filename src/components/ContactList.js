@@ -1,21 +1,16 @@
-import React from "react";
+import React, { useRef } from "react";
 import ContactCard from "./ContactCard";
-import { Link, useLocation } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 const ContactList = (props) => {
   // console.log(props.contacts);
-
   const deleteContact = (id) => {
     props.getContactId(id);
   };
-
-  const navigate = useNavigate();
-  const location = useLocation()
-  const navigateRoute=()=>{
-    console.log(location.pathname);
-    navigate("/add")
+  const inputEl = useRef("");
+  const getSearchTerm=()=>{
+    props.searchKeyword(inputEl.current.value);
   }
   const contactList = props.contacts.map((contact) => {
     return (
@@ -40,7 +35,13 @@ const ContactList = (props) => {
           </button>
         </Link>
       </div>
-      <div className="">{contactList}</div>
+      <div className="w-[380px] input-group relative flex flex-wrap items-stretch w-full mb-4 rounded border border-solid border-gray-300 focus:border-blue-600 ">
+      <input ref={inputEl} type="search" className="form-control relative flex-auto min-w-0 block w-full px-3 py-1.5 rounded focus:border-blue-600 focus:outline-none" placeholder="Search" value={props.term} onChange={getSearchTerm}/>
+      <span className="mr-4 flex items-center px-3 py-1.5">
+      <i className="absolute fa-solid mr-3 fa-search text-[1.3rem]"></i>
+      </span>
+    </div>
+      <div className="">{contactList.length>0?contactList: "No Contacts Available"}</div>
     </div>
   );
 };

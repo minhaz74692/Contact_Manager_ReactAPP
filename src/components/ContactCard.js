@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import userImg from "../image/user.png";
 
@@ -6,7 +6,7 @@ const ContactCard = (props) => {
   const { id, name, email } = props.contact;
   return (
     <div className="rounded mb-2 flex items-center w-[400px] border-[1px] shadow-lg">
-      <img className="w-[40px] m-1" src={userImg}></img>
+      <img className="w-[40px] m-1" alt="userImage" src={userImg}></img>
       <Link
         to={{ pathname: `/contacts/${id}`, state: { contact: props.contact } }}
       >

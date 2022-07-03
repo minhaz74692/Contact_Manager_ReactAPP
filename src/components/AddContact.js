@@ -1,6 +1,4 @@
-import React, { Component, useState } from "react";
-import { Link } from "react-router-dom";
-import { withRouter } from "react-router";
+import React, {  useState } from "react";
 import { useNavigate } from "react-router";
 
 //This is a class based react component;

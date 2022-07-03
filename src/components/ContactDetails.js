@@ -15,7 +15,7 @@ const ContactDetails = (props) => {
     <div className="grid grid-cols-3">
         <div className="grid-cols-6"></div>
       <div className="mt-4 grid-cols-6 block ms-auto">
-        <img className="w-[15rem] block mx-auto" src={Image}></img>
+        <img className="w-[15rem] block mx-auto" alt="userImage" src={Image}></img>
         <h1 className="text-center font-mono text-[2rem] font-bold">{item.name}</h1>
         <h2 className="text-center text-[1.5rem] font-mono">{item.email}</h2>
         <Link to="/">

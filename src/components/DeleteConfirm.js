@@ -4,10 +4,11 @@ import { Link, useLocation } from 'react-router-dom';
 const DeleteConfirm = (props) => {
     // const {id, name, email} = props.contact
     const location= useLocation();
-    const id = location.pathname.slice(17);
+    const thisId = location.pathname.slice(17);
+    const {id, name, email} = props.contact.find((contact) => contact.id === thisId);
   return (
     <>
-    <p className='text-center font-mono mt-20 text-[2rem]'>Are you sure to delete this contact?</p>
+    <p className='text-center font-mono mt-20 text-[1.5rem]'>Are you sure to delete {name} from your contact list?</p>
     <div className='flex items-center justify-center mt-5'>
       
       <Link to="/">

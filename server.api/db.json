@@ -1,0 +1,29 @@
+{
+  "contacts": [
+    {
+      "id": "f760e020-24d3-4060-a1fa-08d1ebe3224d",
+      "name": "Mohammad Kamrul Islam",
+      "email": "kamrul23@gmail.com"
+    },
+    {
+      "id": "5756a458-ab1b-455f-a921-d9d94d3c8513",
+      "name": "Minhazul Islam",
+      "email": "minhaz123@gmail.com"
+    },
+    {
+      "id": "4ff02ec8-da90-48d8-9a24-cef0e07a8f70",
+      "name": "mynul islam ridoy",
+      "email": "mynil@gmail.com"
+    },
+    {
+      "id": "a3fe5049-8d5c-4c23-83e7-0bd3706a4866",
+      "name": "Monirul Islam",
+      "email": "monir.ce.cuet@gmail.com"
+    },
+    {
+      "id": "c6faa141-7b87-457f-b334-3fa8a73bbd5a",
+      "name": "Helal Uddin",
+      "email": "Helal@gmail.com"
+    }
+  ]
+}
