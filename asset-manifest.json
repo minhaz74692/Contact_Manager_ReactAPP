@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Contact_Manager_ReactAPP/static/css/main.cb4b4774.css",
+    "main.js": "/Contact_Manager_ReactAPP/static/js/main.b53264a9.js",
+    "static/js/787.e9a04dc3.chunk.js": "/Contact_Manager_ReactAPP/static/js/787.e9a04dc3.chunk.js",
+    "static/media/user.png": "/Contact_Manager_ReactAPP/static/media/user.a80bb3a4bccd74179fd2.png",
+    "index.html": "/Contact_Manager_ReactAPP/index.html",
+    "main.cb4b4774.css.map": "/Contact_Manager_ReactAPP/static/css/main.cb4b4774.css.map",
+    "main.b53264a9.js.map": "/Contact_Manager_ReactAPP/static/js/main.b53264a9.js.map",
+    "787.e9a04dc3.chunk.js.map": "/Contact_Manager_ReactAPP/static/js/787.e9a04dc3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb4b4774.css",
+    "static/js/main.b53264a9.js"
+  ]
+}
